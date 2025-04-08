@@ -42,17 +42,29 @@ int main() {
     printf("codigo: %s\n", CODIGO);
     printf("capital: %s\n", CAP);
     printf("população: %d\n", populacao);
-    printf("área: %f\n", area);
-    printf("PIB: %f\n", pib);
-    printf("pontos turisticos: %d\n", point);
+    printf("área: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("quanridade de pontos turisticos: %d\n", point);
+    //desafio nivel aventureiro que acrescenta a dencidade populacional e renda per capita na carta 1
+    float dencidade, rendapercapita;
+    dencidade = populacao/area;
+    rendapercapita = pib/populacao;
+    printf("Densidade Populacional: %.2f hab/km² \n" , dencidade);
+    printf("PIB per Capita: %.2f reais\n" , rendapercapita);
     //info da carta 2
     printf("\ncarta 2:\n");
     printf("estados: %s\n", ESTADO2);
     printf("codigo: %s\n", CODIGO2);
     printf("capital: %s\n", CAP2);
     printf("população: %d\n", populacao2);
-    printf("área: %f\n", area2);
-    printf("PIB: %f\n", pib2);
-    printf("pontos turisticos: %d\n", point2);
+    printf("área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("quantidade de pontos turisticos: %d\n", point2);
+    //desafio nivel aventureiro que acrescenta a dencidade populacional e renda per capita na carta 2
+    float dencidade2, rendapercapita2;
+    dencidade2 = populacao2/area2;
+    rendapercapita2 = pib2/populacao2;
+    printf("Densidade Populacional: %.2f hab/km² \n" , dencidade2);
+    printf("PIB per Capita: %.2f reais\n" , rendapercapita2);
 return 0;
 }
