@@ -66,5 +66,17 @@ int main() {
     rendapercapita2 = pib2/populacao2;
     printf("Densidade Populacional: %.2f hab/km² \n" , dencidade2);
     printf("PIB per Capita: %.2f reais\n" , rendapercapita2);
+    //desafio mestre
+    int pop = populacao > populacao2, pontos = point > point2;
+    float areav = area > area2, pibs = pib > pib2, rendav = rendapercapita > rendapercapita2, denciv = dencidade < dencidade2;
+    long double powercad1 = populacao + area + pib + point + rendapercapita + dencidade, powercad2 =populacao2 + area2 + pib2 + point2 + rendapercapita2 + dencidade2, x1 = powercad1 > powercad2;
+    printf("\nComparação de Cartas:\n");
+    printf("População: Carta 1 venceu (%d)\n", pop);
+    printf("Área: Carta 1 venceu (%f)\n", areav);
+    printf("PIB: Carta 1 venceu (%f)\n", pibs);
+    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos);
+    printf("Densidade Populacional: Carta 2 venceu (%f)\n", denciv);
+    printf("PIB per Capita: Carta 1 venceu (%f)\n", rendav);
+    printf("Super Poder: Carta 1 venceu (%lf)\n", x1);
 return 0;
 }
